@@ -1,0 +1,220 @@
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    transition: background-color 0.5s ease;
+    background-color: rgb(189, 254, 254);
+}
+
+/* Background Colors for Relationships */
+.bg-siblings {
+    background-color: #f4d4ff;
+}
+
+.bg-friendship {
+    background-color: #d4f4ff;
+}
+
+.bg-love {
+    background-color: #ffd4d4;
+}
+
+.bg-marriage {
+    background-color: #ffe4b5;
+}
+
+.bg-affection {
+    background-color: #f5f5dc;
+}
+
+.bg-enemies {
+    background-color: #ff9999;
+}
+
+/* Headings */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h1 {
+    color: #485dff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    margin-bottom: 58px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #222;
+}
+
+/* Input Fields */
+label {
+    font-size: 1rem;
+    color: #555;
+}
+
+input {
+    padding: 10px;
+    font-size: 1rem;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 300px;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Center Alignment for Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+form label,
+form input,
+form button {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+/* Description Section */
+.relationship-description {
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+}
+
+.relationship-description h2 {
+    font-size: 1.8rem;
+    color: #485dff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.relation-details p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin: 10px 0;
+    padding: 5px 10px;
+    border-left: 4px solid #007bff;
+    background: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.relation-details p strong {
+    color: #222;
+    font-weight: bold;
+}
+
+/* Additional Styles */
+n1 {
+    font-size: larger;
+}
+
+n2 {
+    font-size: larger;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px; /* Adjust font size for tablets */
+    }
+    h3 {
+        font-size: 1.2rem; /* Adjust font size for smaller devices */
+    }
+    form {
+        width: 80%;
+        padding: 15px;
+    }
+    form label,
+    form input,
+    form button {
+        width: 100%;
+        max-width: 100%; /* Full-width for smaller devices */
+    }
+    .relationship-description {
+        width: 90%;
+        padding: 15px;
+    }
+    .relation-details p {
+        font-size: 1rem;
+        padding: 5px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px; /* Adjust font size for mobile devices */
+    }
+    h3 {
+        font-size: 1rem; /* Adjust font size for mobile devices */
+    }
+    form {
+        width: 100%;
+        padding: 10px;
+    }
+    form label,
+    form input,
+    form button {
+        width: 100%;
+        max-width: 100%; /* Full-width for mobile devices */
+    }
+    .relationship-description {
+        width: 100%;
+        padding: 10px;
+    }
+    .relation-details p {
+        font-size: 0.9rem;
+        padding: 5px 7px;
+    }
+}

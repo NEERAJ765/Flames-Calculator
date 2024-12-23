@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relationship Finder</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1 class="main-heading">Find Your Relationship</h1>
+    </header>
+    
+    <section class="form-section">
+        <label for="name1">Enter the first person name:</label>
+        <input type="text" id="name1" required><br><br>
+
+        <label for="name2">Enter the second person name:</label>
+        <input type="text" id="name2" required><br><br>
+
+        <button onclick="findRelationship()">Find Relationship</button>
+    </section>
+
+    <h3 id="result"></h3>
+
+    <section class="relationship-description">
+        <h2>About the Relationships</h2>
+        <div class="relation-details">
+            <p><strong>Love:</strong> A deep and affectionate bond between two individuals, symbolizing care and passion.</p>
+            <p><strong>Friendship:</strong> A mutual bond of trust and understanding without romantic involvement.</p>
+            <p><strong>Marriage:</strong> A lifelong partnership where two individuals vow to share their lives.</p>
+            <p><strong>Siblings:</strong> A family bond shared by brothers or sisters, full of love and care.</p>
+            <p><strong>Affection:</strong> A soft and tender feeling of fondness for someone.</p>
+            <p><strong>Enemies:</strong> A state of mutual dislike or rivalry, often stemming from misunderstandings.</p>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
